@@ -1,0 +1,72 @@
+#top {
+}
+
+#top .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 0;
+  align-items: center;
+}
+
+#top .info {
+  padding: 15px;
+  position: relative;
+}
+
+#top .info .blue-square {
+  border: 20px solid #dbf1ff;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 0;
+  top: -70%;
+  left: -50%;
+}
+
+#top .info h1 {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* Most designers will not use the color black because black makes it look flat.  They'll use like an offset of the black. */
+  color: #16171b;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+#top .info p {
+  position: relative;
+  color: #919191;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+
+#top .info a {
+  position: relative;
+  font-size: 0.9rem;
+  color: #16171b;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #000;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+#top .img {
+}
+
+#top .img .background-img {
+  /* When you are running a server, you would use /img/user-img.jpg to serve the image, with / being the home directory.  Since we are currently not using a server, just plain HTML and CSS, we use ../img/user-img.jpg.  What this is saying is that this img folder is not inside of the CSS folder.  So we have to backtrack, go back another level to the branding-portfolio directory.  And then there is an img folder and that img folder has an image. */
+  background: url("../img/user-img.jpg");
+  background-position: top center;
+  /* The image is always going to start from the top and it's always going to be centered. */
+  background-repeat: no repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 500px;
+  height: 800px;
+  margin: 0 auto;
+}
