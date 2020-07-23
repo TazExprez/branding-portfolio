@@ -1,0 +1,23 @@
+{
+  "name": "branding-portfolio",
+  "version": "1.0.0",
+  "description": "This is the Branding Porfolio project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TazExprez/branding-portfolio.git"
+  },
+  "author": "Luis Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TazExprez/branding-portfolio/issues"
+  },
+  "homepage": "https://github.com/TazExprez/branding-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "gulp": "^4.0.2"
+  }
+}
