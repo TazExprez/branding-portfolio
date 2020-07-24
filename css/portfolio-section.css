@@ -206,33 +206,3 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-/* This is going to trigger the Font Awesome icons in the services section.  We're going to be able to target all of them. */
-/* #portfolio-section .portfolio-container .box .fas {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-#portfolio-section .portfolio-container .box h5 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-}
-
-#portfolio-section .portfolio-container .box p {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: #b3b3b3;
-}
-
-#portfolio-section .portfolio-container .box.blue {
-  border-bottom: 2px solid #52b8ff;
-}
-#portfolio-section .portfolio-container .box.red {
-  border-bottom: 2px solid #ff5253;
-}
-#portfolio-section .portfolio-container .box.yellow {
-  border-bottom: 2px solid #ffc853;
-} */
