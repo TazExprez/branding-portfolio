@@ -1,0 +1,52 @@
+footer {
+  background: #f9fafc;
+  padding: 100px 15px;
+}
+
+footer .social-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  /* When you set this max-width: 400px; the icons will come closer together on a large screen and gather on the left side of the screen. */
+  max-width: 400px;
+  /* This will center the group of icons that were moved by the max-width: 400px; above. */
+  margin: 0 auto;
+}
+
+footer .social-container a {
+  font-size: 3rem;
+  color: #8e8f91;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  /* We did display: inline-bock; in order to be able to add a padding inside each a tag.  The reason you do this is because on mobile the icon inside the a tag might not be clickable.  With the padding, a person can click on the a tag. */
+  display: inline-block;
+  padding: 10px;
+}
+
+footer .social-container a:hover {
+  color: rgba(255, 53, 53, 1);
+}
+
+footer h5 {
+  font-size: 1rem;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer h6 {
+  font-size: 0.8rem;
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+}

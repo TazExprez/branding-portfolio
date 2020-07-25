@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- We changed the meta tag above this one. -->
+    <!-- There is no zooming on the website.  This is going to help us to be able to go in and basically treat each section and make it more responsive and more accurate.  Later on we might turn back on the zoomable, but for now we're going to keep it off. -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <!-- Put this Font Awesome stuff above the main.css. -->
     <script
       src="https://kit.fontawesome.com/ee7a5d7e28.js"
@@ -18,9 +21,7 @@
         <div class="info">
           <div class="blue-square"></div>
           <h1>Joe Santos Garcia</h1>
-          <p>
-            Lorem ipsum dolor sit amet
-          </p>
+          <p>Web Developer</p>
           <a href="#">Latest Works</a>
         </div>
         <div class="img">
@@ -30,7 +31,7 @@
         </div>
       </div>
     </section>
-    <section id="services">
+    <section id="services-section">
       <div class="container">
         <div class="title">
           <div class="circle"></div>
@@ -455,17 +456,28 @@
           <h1>Testimonials</h1>
         </div>
         <div class="testimonials-container">
-          <div class="test-left">
-            <!-- We need to create this extra div because later on we want to use it in a hover effect that we want to create. -->
-            <div class="hover-bg">
-              <div class="name">James</div>
+          <div class="test-sides test-right">
+            <div
+              class="person-img"
+              style="background: url('./img/testimonials-2.jpg');"
+            >
+              <!-- We need to create this extra div because later on we want to use it in a hover effect that we want to create. -->
+              <div class="hover-bg">
+                <div class="name">James</div>
+              </div>
             </div>
           </div>
           <div class="test-center">
             <div class="header">
-              <img src="" alt="" />
+              <div
+                class="user-img"
+                style="background: url('./img/testimonials-5.jpg');"
+              >
+                <!-- We were using an img before, but now why are adding a style attribute to the .user-img div above. -->
+                <!-- <img src="./img/testimonials-1.jpg" alt="" /> -->
+              </div>
               <div class="info">
-                <h4>Raul Rodriguez</h4>
+                <h4>Jenny Benzino</h4>
                 <span>CEO, Nike</span>
               </div>
             </div>
@@ -483,14 +495,38 @@
               blanditiis labore voluptate vero explicabo quis atque.
             </p>
           </div>
-          <div class="test-right">
-            <!-- We need to create this extra div because later on we want to use it in a hover effect that we want to create. -->
-            <div class="hover-bg">
-              <div class="name">Bryant</div>
+          <div class="test-sides test-right">
+            <div
+              class="person-img"
+              style="background: url('./img/testimonials-4.jpg');"
+            >
+              <!-- We need to create this extra div because later on we want to use it in a hover effect that we want to create. -->
+              <div class="hover-bg">
+                <div class="name">Bryant</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="social-container">
+        <a href="http://www.facebook.com/">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="http://www.dribbble.com/">
+          <!-- Taking off the -square leaves you with the icon itself. -->
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a href="http://www.twitter.com/">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="http://www.instagram.com/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <h5>Joe Santos Garcia</h5>
+      <h6>Web Developer</h6>
+    </footer>
   </body>
 </html>
