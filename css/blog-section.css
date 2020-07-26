@@ -61,6 +61,7 @@
   letter-spacing: 2px;
   margin-bottom: 1.8rem;
 }
+
 #blog-section .blog-container .post .details p {
   font-size: 1rem;
   color: #919191;
@@ -112,8 +113,24 @@
 
 /* Tablets */
 @media only screen and (max-width: 960px) {
+  #blog-section .blog-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 588px 588px 588px;
+  }
 }
 
 /* Phones */
 @media only screen and (max-width: 767px) {
+  #blog-section .title h1 {
+    font-size: 3rem;
+  }
+
+  #blog-section .blog-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 400px);
+  }
+
+  #blog-section .blog-container .post:hover .details {
+    transform: translate3d(0, -400px, 0);
+  }
 }

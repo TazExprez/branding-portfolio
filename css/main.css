@@ -9,13 +9,101 @@
 @import "testimonials-section.css";
 @import "footer-section.css";
 
-body {
-  /* background: #eeeeee; */
-}
+/* body {
+  background: #eeeeee;
+} */
 
 .container {
   max-width: 1150px;
   margin: 0 auto;
+}
+
+/* We are going to be putting our menu in main.css because it makes sense.  This is going to be for all of our pages. */
+
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+}
+
+/* We are going to move the background of .logo to inside of .name. */
+header .logo .name {
+  background: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+header .header-menu {
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-menu a {
+  /* This is not cascading down from the parent element, so we put it here. */
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+header .header-menu a:hover {
+  font-weight: 700;
+  color: #ff5253;
+}
+
+header .menu-btn {
+  color: #ff5253;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.6rem;
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  /* This is done so that the mobile menu does not appear on screens larger than mobile. */
+  display: none;
+  background: #fff;
+  flex-direction: column;
+  padding: 40px 0;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+  /* This is what we are doing without the class of .active. */
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+}
+
+.mobile-menu.active {
+  transform: translate3d(0, 0, 0);
+}
+
+.mobile-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-menu a:hover {
+  color: white;
+  background: #ff5253;
 }
 
 /* Tablets */
@@ -27,4 +115,19 @@ body {
 
 /* Phones */
 @media only screen and (max-width: 767px) {
+  header .header-menu {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: flex;
+  }
+
+  header .logo {
+    font-size: 1.3rem;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
 }

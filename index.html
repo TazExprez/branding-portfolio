@@ -12,9 +12,40 @@
       src="https://kit.fontawesome.com/ee7a5d7e28.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <!-- We are creating another element here to control the spacing inside the .logo div better.  We are going to move the background from the .logo div inside of the .name a tag. -->
+        <a href="index.html" class="name">
+          <!-- If you have a short name, you can just put it here.  If you have a long name, you should probably just put your initials here. -->
+          JSM
+        </a>
+      </div>
+      <div class="header-menu">
+        <!-- This link will take you to the top of the homepage. -->
+        <a href="index.html">Home</a>
+        <!-- This link will take you to the section of the page that corresponds to the id. -->
+        <a href="index.html#services-section">Services</a>
+        <a href="index.html#portfolio-section">Portfolio</a>
+        <a href="index.html#experience-section">Experience</a>
+        <a href="index.html#blog-section">Blog</a>
+        <a href="index.html#testimonials-section">Testimonials</a>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <!-- This menu is for mobile phones.  We placed this outside of the header element.  We are going to give it the .mobile-menu and .active classes. -->
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#services-section">Services</a>
+      <a href="index.html#portfolio-section">Portfolio</a>
+      <a href="index.html#experience-section">Experience</a>
+      <a href="index.html#blog-section">Blog</a>
+      <a href="index.html#testimonials-section">Testimonials</a>
+    </div>
     <section id="top">
       <!-- We are putting everything inside of the top section inside of this container. -->
       <div class="container">
@@ -182,24 +213,24 @@
               <h4>Graphic Artist - Nike</h4>
               <span class="date">June 2012 - July 2013</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-                eligendi, veniam consequuntur sit!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ad
+                animi maiores facere cum obcaecati aspernatur mollitia?.
               </p>
             </div>
             <div class="info-box">
               <h4>Graphic Artist - Nike</h4>
               <span class="date">June 2012 - July 2013</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-                eligendi, veniam consequuntur sit!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ad
+                animi maiores facere cum obcaecati aspernatur mollitia?.
               </p>
             </div>
             <div class="info-box">
               <h4>Graphic Artist - Nike</h4>
               <span class="date">June 2012 - July 2013</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-                eligendi, veniam consequuntur sit!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ad
+                animi maiores facere cum obcaecati aspernatur mollitia?.
               </p>
             </div>
           </div>
@@ -213,7 +244,8 @@
         </div>
         <div class="blog-container">
           <!-- Start of Post -->
-          <div class="post">
+          <!-- The blog/# let's us know that this is supposed to link to a blog post. -->
+          <a href="blog/#" class="post">
             <!-- We are putting our image here, the url, instead of the blog-section.css file.  The reason we are doing this in the HTML, with inline styles, is because if you are doing this in a blog, in WordPress, the way that you're going to be able to control this is not by putting the url in a CSS file.  You won't have any control over that.  If you put it here, then you're going to be able to control it through your blog. -->
             <div
               class="post-img"
@@ -249,10 +281,10 @@
                 Read More
               </div>
             </div>
-          </div>
+          </a>
           <!-- End of Post -->
           <!-- Start of Post -->
-          <div class="post">
+          <a href="blog/#" class="post">
             <!-- We are putting our image here, the url, instead of the blog-section.css file.  The reason we are doing this in the HTML, with inline styles, is because if you are doing this in a blog, in WordPress, the way that you're going to be able to control this is not by putting the url in a CSS file.  You won't have any control over that.  If you put it here, then you're going to be able to control it through your blog. -->
             <div
               class="post-img"
@@ -288,10 +320,10 @@
                 Read More
               </div>
             </div>
-          </div>
+          </a>
           <!-- End of Post -->
           <!-- Start of Post -->
-          <div class="post">
+          <a href="blog/#" class="post">
             <!-- We are putting our image here, the url, instead of the blog-section.css file.  The reason we are doing this in the HTML, with inline styles, is because if you are doing this in a blog, in WordPress, the way that you're going to be able to control this is not by putting the url in a CSS file.  You won't have any control over that.  If you put it here, then you're going to be able to control it through your blog. -->
             <div
               class="post-img"
@@ -327,10 +359,10 @@
                 Read More
               </div>
             </div>
-          </div>
+          </a>
           <!-- End of Post -->
           <!-- Start of Post -->
-          <div class="post">
+          <a href="blog/#" class="post">
             <!-- We are putting our image here, the url, instead of the blog-section.css file.  The reason we are doing this in the HTML, with inline styles, is because if you are doing this in a blog, in WordPress, the way that you're going to be able to control this is not by putting the url in a CSS file.  You won't have any control over that.  If you put it here, then you're going to be able to control it through your blog. -->
             <div
               class="post-img"
@@ -366,10 +398,10 @@
                 Read More
               </div>
             </div>
-          </div>
+          </a>
           <!-- End of Post -->
           <!-- Start of Post -->
-          <div class="post">
+          <a href="blog/#" class="post">
             <!-- We are putting our image here, the url, instead of the blog-section.css file.  The reason we are doing this in the HTML, with inline styles, is because if you are doing this in a blog, in WordPress, the way that you're going to be able to control this is not by putting the url in a CSS file.  You won't have any control over that.  If you put it here, then you're going to be able to control it through your blog. -->
             <div
               class="post-img"
@@ -405,10 +437,10 @@
                 Read More
               </div>
             </div>
-          </div>
+          </a>
           <!-- End of Post -->
           <!-- Start of Post -->
-          <div class="post">
+          <a href="blog/#" class="post">
             <!-- We are putting our image here, the url, instead of the blog-section.css file.  The reason we are doing this in the HTML, with inline styles, is because if you are doing this in a blog, in WordPress, the way that you're going to be able to control this is not by putting the url in a CSS file.  You won't have any control over that.  If you put it here, then you're going to be able to control it through your blog. -->
             <div
               class="post-img"
@@ -444,7 +476,7 @@
                 Read More
               </div>
             </div>
-          </div>
+          </a>
           <!-- End of Post -->
         </div>
       </div>
@@ -456,7 +488,7 @@
           <h1>Testimonials</h1>
         </div>
         <div class="testimonials-container">
-          <div class="test-sides test-right">
+          <div class="test-sides test-left">
             <div
               class="person-img"
               style="background: url('./img/testimonials-2.jpg');"
@@ -528,5 +560,7 @@
       <h5>Joe Santos Garcia</h5>
       <h6>Web Developer</h6>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
