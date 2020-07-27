@@ -12,9 +12,9 @@ const watch = () => {
     }
   });
 
-  gulp.watch("./css/*.css", injectCss);
-  gulp.watch("./*.html").on("change", browserSync.reload);
-  // gulp.watch("./js/*.js").on("change", browserSync.reload);
+  gulp.watch("./css/**/*.css", injectCss);
+  gulp.watch("./**/*.html").on("change", browserSync.reload);
+  gulp.watch("./js/**/*.js").on("change", browserSync.reload);
 };
 
 exports.default = watch;

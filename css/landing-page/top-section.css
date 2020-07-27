@@ -57,7 +57,7 @@
 
 #top .img .background-img {
   /* When you are running a server, you would use /img/user-img.jpg to serve the image, with / being the home directory.  Since we are currently not using a server, just plain HTML and CSS, we use ../img/user-img.jpg.  What this is saying is that this img folder is not inside of the CSS folder.  So we have to backtrack, go back another level to the branding-portfolio directory.  And then there is an img folder and that img folder has an image. */
-  background: url("../img/user-img.jpg");
+  background: url("../../img/user-img.jpg");
   background-position: top center;
   /* The image is always going to start from the top and it's always going to be centered. */
   background-repeat: no repeat;
