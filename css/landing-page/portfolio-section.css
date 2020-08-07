@@ -115,7 +115,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image1 .image {
-  background: url("../img/portfolio-project-1.gif");
+  background: url("/img/portfolio-project-1.gif");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -129,7 +129,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image2 .image {
-  background: url("../img/portfolio-project-2.gif");
+  background: url("/img/portfolio-project-2.gif");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -143,7 +143,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image3 .image {
-  background: url("../img/portfolio-project-3.png");
+  background: url("/img/portfolio-project-3.png");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -157,7 +157,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image4 .image {
-  background: url("../img/portfolio-project-4.png");
+  background: url("/img/portfolio-project-4.png");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -171,7 +171,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image5 .image {
-  background: url("../img/portfolio-project-5.gif");
+  background: url("/img/portfolio-project-5.gif");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -185,7 +185,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image6 .image {
-  background: url("../img/portfolio-project-6.jpg");
+  background: url("/img/portfolio-project-6.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -199,7 +199,7 @@
 }
 
 #portfolio-section .portfolio-container .box.image7 .image {
-  background: url("../img/portfolio-project-7.png");
+  background: url("/img/portfolio-project-7.png");
   height: 100%;
   width: 100%;
   background-size: cover;
