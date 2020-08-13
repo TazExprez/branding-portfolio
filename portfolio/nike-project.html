@@ -12,6 +12,11 @@
       src="https://kit.fontawesome.com/ee7a5d7e28.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <script
       data-ad-client="ca-pub-8383137084777567"
@@ -74,7 +79,7 @@
       <div class="logo">
         <!-- We are creating another element here to control the spacing inside the .logo div better.  We are going to move the background from the .logo div inside of the .name a tag. -->
         <!-- Once we deploy this to the server, we have to add a / to all of these index. links. -->
-        <a href="/index.html" class="name">
+        <a href="/index.html" id="name" class="name">
           <!-- If you have a short name, you can just put it here.  If you have a long name, you should probably just put your initials here. -->
           JSM
         </a>
@@ -186,5 +191,12 @@
     <!-- Once we deploy this to the server, we can delete the two dots because automatically it knows that it's looking at the root directory.  And then within it there is a folder called js/ and then there is a file called app.js. -->
     <!-- <script src="../js/app.js"></script> -->
     <script src="/js/app.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#name").click(function () {
+          fbq("track", "InitiateCheckout");
+        });
+      });
+    </script>
   </body>
 </html>
