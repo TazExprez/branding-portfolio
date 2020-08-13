@@ -87,7 +87,7 @@
         <!-- This link will take you to the top of the homepage. -->
         <a href="index.html">Home</a>
         <!-- This link will take you to the section of the page that corresponds to the id. -->
-        <a href="index.html#services-section">Services</a>
+        <a href="index.html#services-section" id="services">Services</a>
         <a href="index.html#portfolio-section">Portfolio</a>
         <a href="index.html#experience-section">Experience</a>
         <a href="index.html#blog-section">Blog</a>
@@ -625,6 +625,14 @@
       $(document).ready(function () {
         $("#name").click(function () {
           fbq("track", "InitiateCheckout");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        fbq("track", "Purchase", {
+          value: 10,
+          currency: "USD"
         });
       });
     </script>
