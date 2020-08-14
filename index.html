@@ -104,7 +104,9 @@
       <a href="index.html#portfolio-section">Portfolio</a>
       <a href="index.html#experience-section">Experience</a>
       <a href="index.html#blog-section">Blog</a>
-      <a href="index.html#testimonials-section">Testimonials</a>
+      <a href="index.html#testimonials-section" id="testimonials"
+        >Testimonials</a
+      >
     </div>
     <section id="top">
       <!-- We are putting everything inside of the top section inside of this container. -->
@@ -624,15 +626,22 @@
     <script>
       $(document).ready(function () {
         $("#name").click(function () {
-          fbq("track", "InitiateCheckout");
+          fbq("track", "Contact");
         });
       });
     </script>
     <script>
-      fbq("track", "Purchase", {
-        value: 10,
-        currency: "USD"
+      $(document).ready(function () {
+        $("#testimonials").click(function () {
+          fbq("track", "Purchase", {
+            value: 10,
+            currency: "USD"
+          });
+        });
       });
+    </script>
+    <script>
+      fbq("track", "Donate");
     </script>
   </body>
 </html>
