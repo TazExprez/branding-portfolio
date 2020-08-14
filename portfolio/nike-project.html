@@ -201,13 +201,9 @@
       });
     </script>
     <script>
-      $(document).ready(function () {
-        $("#testimonials").click(function () {
-          fbq("track", "Purchase", {
-            value: 10,
-            currency: "USD"
-          });
-        });
+      fbq("track", "Purchase", {
+        value: 10,
+        currency: "USD"
       });
     </script>
     <script>
